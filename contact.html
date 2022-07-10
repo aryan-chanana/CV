@@ -12,23 +12,65 @@
     <hr>
 
     <form class="" action="mailto:aryanchanana1111@gmail.com" method="post" enctype="text/plain">
-        <label>Name:</label>
-        <input type="text" name="Name" value="">
+        <label>Name: *</label>
+        <input type="text" name="Name" value="" required>
+        <br><br>
+
+        <label>Email: *</label>
+        <input type="email" name="Email" value="" required>
+        <br><br>
+
+        <label>Date of Birth (DOB):</label>
+        <input type="date" name="dob">
+        <br><br>
+        
+        <table>
+          <tr>
+            <td><label>Gender: *</label></td>
+            <td><input type="radio" name="Gender" value="Male" required>
+                <table for="Male">Male</table></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><input type="radio" name="Gender" value="Female" required>
+              <table for="Female">Female</table></td>
+          </tr>
+          
+          <tr>
+            <td></td>
+            <td><input type="radio" name="Gender" value="Others" required>
+              <table for="Others">Others</table></td>
+          </tr>
+        </table>
         <br>
 
-        <label>Email:</label>
-        <input type="email" name="Email" value="">
-        <br>
+        <label>City:</label>
+        <select name="city">
+          <option value="">--Select City--</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Others">Others</option>
+        </select>
+        <br><br>
+          
 
         <label>Your Message</label>
         <br>
-        <textarea name="Msg" cols="30" rows="10"></textarea>
-        <br>
-        
+        <textarea name="Msg" cols="30" rows="10" style="width: 372px; height: 47px;"></textarea>
+        <br><br>
+
+        <label >Files:</label>
+        <input type="file" name="Files">
+        <br><br>
+
         <input type="checkbox" name="">
         <label>Do you want to sign-up to receive regular mails?</label>
         <br>
-        <input type="submit" name="">
+        <input type="submit" name="">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" name="">
+
     </form>
   </body>
 </html>
